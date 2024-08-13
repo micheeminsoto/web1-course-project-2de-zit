@@ -1,0 +1,268 @@
+@import url(https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift);
+@import url(https://db.onlinewebfonts.com/c/9f5af5bd3b02c9efd39b88ea75ddad47?family=Helvetica);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+
+body{
+	background-color: #faf8f6;
+}
+
+nav ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 40px;
+	margin-top: 30px;
+}
+
+.nav-links a{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.nav-links{
+	position: relative;
+	z-index: 10;
+}
+
+.nav-links a:hover {
+	text-decoration: underline;
+	text-decoration-color: #4695c1;
+	text-decoration-thickness: 7px;
+	text-underline-offset: 10px;
+}
+
+ a{
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #4695c1;
+	
+}
+
+
+
+.intro{
+	display: flex;
+	align-items: center;
+	
+
+}
+
+.profile-pic{
+	margin: auto;
+}
+
+.profile-pic img{
+	width: 75%;
+	margin-left: 35%;
+	margin-top: -18%;
+	
+}
+
+.intro-text{
+	margin: auto;
+	margin-right:  20%;
+	margin-top: 15%;	
+}
+
+
+.intro-text h1{
+	color: #3d3d3d;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 40px;
+	margin-bottom: 10px;
+	
+}
+
+.intro-text h2{
+	font-family: "Bahnschrift";
+	font-size: 20px;
+	font-weight: lighter;
+	color: #4695c1;
+	margin-bottom: 15%;
+	margin-left: 20px;
+}
+
+.button {
+	padding:  30px;
+	background-color: #4695c1;
+	color: #FFF;
+	width: 70%;
+	border-radius: 50px;
+	margin-left: 30%;
+	
+	
+}
+
+.social-links{
+	margin-top: -65%;
+	margin-right: 50px;
+}
+
+
+
+
+
+.social-links img {
+    width: 350px;
+}
+
+
+.outer{
+    background-color: #4695c1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+	
+	
+}
+
+
+.outer p{
+    font-family: "Bahnschrift";
+    font-style: normal;
+    text-align: center;
+}
+
+.menu-close{
+	display: none;
+}
+
+
+@media (max-width:480px) {
+	.intro{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.profile-pic img{
+		width: 400px;
+		margin: auto;
+	}
+
+	.intro-text{
+		margin-top: -40%;
+		text-align: center;
+	}
+
+	.intro-text h1{
+		color: #3d3d3d;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+	}
+
+	.intro-text h2{
+		font-family: "Bahnschrift";
+		font-size: 20px;
+		font-weight: lighter;
+		color: #4695c1;
+		margin-bottom: 15%;
+		text-align: center;
+	}
+
+
+	.button{
+		padding:  20px;
+		background-color: #4695c1;
+		color: #FFF;
+		width: 50%;
+		border-radius: 50px;
+		margin: auto;
+		
+	}
+	
+	.social-links{
+		justify-content: center;
+		margin-left: 30px;
+	}
+
+	.outer {
+        padding: 5px 0;
+    }
+
+    .outer p {
+        font-size: 12px; 
+    }
+
+	.menu-container{
+		position: relative;
+	}
+
+	.menu-icon{
+		font-size: 24px;
+		cursor: pointer;
+		color: white;
+	}
+
+	.menu-icon div{
+		width: 35px;
+		height: 5px;
+		background-color: #4695c1;
+		margin: 6px;
+		transition: 0.4s;
+	}
+
+	.menu a{
+		color: white;
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+		font-size: 15px;
+	}
+
+	.menu {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: #4695c1;
+		overflow-x: hidden;
+		padding-top: 12px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		visibility: hidden;
+		transition: opacity 0.5s; visibility: 0.5s;
+	}
+
+	.menu-close{
+		position: fixed;
+		top: 20px;
+		right: 25px;
+		margin-left: 50px;
+		font-size: 36px;
+	}
+
+	nav ul {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+
+	.nav-links a:hover {
+		text-decoration: underline;
+		text-decoration-color: #FFF;
+		text-decoration-thickness: 7px;
+		text-underline-offset: 10px;
+	}
+}
+
+
+	
+	
+
+

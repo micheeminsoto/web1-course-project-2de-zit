@@ -1,0 +1,436 @@
+@import url(https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift);
+@import url(https://db.onlinewebfonts.com/c/9f5af5bd3b02c9efd39b88ea75ddad47?family=Helvetica);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+
+body{
+	background-color: #faf8f6;
+}
+
+nav ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 40px;
+	margin-top: 30px;
+}
+
+.nav-links a{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.nav-links{
+	position: relative;
+	z-index: 10;
+}
+
+.nav-links a:hover {
+	text-decoration: underline;
+	text-decoration-color: #4695c1;
+	text-decoration-thickness: 7px;
+	text-underline-offset: 10px;
+}
+
+ a{
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #4695c1;
+}
+
+
+
+.about-me{
+    display: flex;
+	justify-content: center;
+}
+
+.foto{
+    flex: 1;
+    text-align: center;
+    margin: auto;
+}
+
+.foto img{
+	margin-top: -15%;
+    width: 100%;
+	margin-left: 30px;
+	
+}
+
+.info {
+	flex: 1;
+	padding: 20px;
+	
+}
+
+
+
+
+.info-title h2{
+	color: #3d3d3d;
+	font-family: "Bahnschrift";
+	font-size: 25px;
+	font-weight: lighter;
+	margin-bottom: 10px;
+}
+
+.info p{
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-size: 17px;
+
+
+}
+
+.info-text {
+	margin-top: 30%;
+	margin-bottom: 50px;
+	margin-left: 10px;
+	
+	
+	
+}
+
+.button{
+	border-radius: 50px;
+	margin-top: 10px;
+	padding:  15px;
+	background-color: #4695c1;
+	color: #FFF;
+}
+
+
+
+.skills{
+	
+	justify-content: space-between;
+	
+
+}
+
+.skills h3{
+	text-align: center;
+
+}
+
+.professional-skills, .basic-skills{
+	flex: 1;
+	margin: 0 20px;
+	margin-bottom: 40%;
+	
+}
+
+.professional-skills h3, .basic-skills h3 {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	color: #3d3d3d;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+.contact{
+	margin-bottom: 0;
+}
+
+.contact strong{
+	font-family: "Bahnschrift";
+	color: #3d3d3d;
+	font-weight: 600;
+	font-size: 16px;
+}
+ 
+
+.skill{
+	margin-bottom: 15px;
+}
+
+
+.skill span{
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.progress{
+	background-color: #efecea;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.progress-bar{
+	background-color: #4695c1;
+	height: 20px;
+	line-height: 20px;
+	color: #FFF;
+	text-align: center;
+	border-radius: 20px 0 0 20px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
+}
+
+.hobbies{
+	margin-bottom: 10%;
+}
+
+.hobbies h2{
+	color: #3d3d3d;
+	font-family: "Bahnschrift";
+	font-size: 25px;
+	font-weight: lighter;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+
+
+.fotogalerij{
+	display: flex;
+	margin-bottom: 10%;
+}
+
+
+.foto-kader{
+	padding: 20px;
+	color: #3d3d3d;
+	border-radius: 50px;
+}
+
+.foto-container {
+    position: relative;
+    margin: 20px;
+    width: 400px;
+}
+
+.foto-kader {
+    position: relative;
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+
+.foto-kader img {
+	width: 300px;
+	display: block;
+	margin: auto;
+}
+
+
+.outer{
+    background-color: #4695c1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+
+
+.outer p{
+    font-family: "Bahnschrift";
+    font-style: normal;
+    text-align: center;
+}
+
+.menu-close{
+	display: none;
+}
+
+@media (max-width:480px) {
+		.about-me{
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.foto{
+			width: 400px;
+			margin-right: 0;
+		}
+
+		.info{
+			flex: 1 1 70%;
+			text-align: center;
+		}
+
+		.info-title{
+			text-align: center;
+			margin-left: 30px;
+		}
+
+		.info-text{
+			margin-top: 30px;
+			text-align: center;
+		}
+
+		.info h2{
+			color: #3d3d3d;
+			font-family: "Bahnschrift";
+			font-size: 20px;
+			font-weight: lighter;
+		}
+
+		.info p{
+			font-family: "Open Sans", sans-serif;
+			font-style: normal;
+			font-size: 15px;
+		}
+
+		.contact{
+			text-align: center;
+		}
+
+		.contact strong{
+			font-family: "Bahnschrift";
+			color: #3d3d3d;
+			font-weight: 600;
+			font-size: 15px;
+		}
+
+		.professional-skills h3 {
+			margin-top: 40px;
+			font-size: 17px;
+
+		}
+
+		.skills{
+			flex-wrap: nowrap;
+			
+		}
+
+		.skill{
+			flex: 1 1 50%;
+			max-width: 50%;
+			margin: auto;
+		}
+
+
+		.fotogalerij{
+			display: flex;
+			flex-direction: column;
+		}
+
+
+		
+		.skill span{
+			font-size: 13px;
+		}
+
+		.basic-skills h3{
+			margin-top: 20%;
+		}
+
+
+		.hobbies{
+			margin-bottom: 30px;
+		}
+
+		.hobbies h2{
+			font-size: 20px;
+		}
+
+		.outer {
+			padding: 5px 0;
+		}
+	
+		.outer p {
+			font-size: 12px; 
+		}
+
+		.foto-kader img{
+			width: 200px;
+		}
+
+		.foto-container {
+			margin-left: 70px;
+			justify-content: center;
+			width: 300px;
+		}
+
+		.menu-container{
+			position: relative;
+		}
+	
+		.menu-icon{
+			font-size: 24px;
+			cursor: pointer;
+			color: white;
+		}
+	
+		.menu-icon div{
+			width: 35px;
+			height: 5px;
+			background-color: #4695c1;
+			margin: 6px;
+			transition: 0.4s;
+		}
+	
+		.menu a{
+			color: white;
+			display: block;
+			text-align: center;
+			margin-top: 30px;
+			font-size: 15px;
+		}
+	
+		.menu {
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			top: 0;
+			right: 0;
+			background-color: #4695c1;
+			overflow-x: hidden;
+			padding-top: 12px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			visibility: hidden;
+			transition: opacity 0.5s; visibility: 0.5s;
+		}
+	
+		.menu-close{
+			position: fixed;
+			top: 20px;
+			right: 25px;
+			margin-left: 50px;
+			font-size: 36px;
+		}
+		
+	
+		nav li{
+			padding: 10px 20px;
+		}
+
+		nav ul {
+			margin-top: 30px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+		}
+
+		.nav-links a:hover {
+			text-decoration: underline;
+			text-decoration-color: #FFF;
+			text-decoration-thickness: 7px;
+			text-underline-offset: 10px;
+		}
+}
+
+
+
+

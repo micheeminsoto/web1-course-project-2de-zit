@@ -1,0 +1,278 @@
+@import url(https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift);
+@import url(https://db.onlinewebfonts.com/c/9f5af5bd3b02c9efd39b88ea75ddad47?family=Helvetica);
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+	background-color: #faf8f6;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 40px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.nav-links a{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.nav-links{
+	position: relative;
+	z-index: 10;
+}
+
+.nav-links a:hover {
+	text-decoration: underline;
+	text-decoration-color: #4695c1;
+	text-decoration-thickness: 7px;
+	text-underline-offset: 8px;
+}
+
+a {
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #4695c1;
+}
+
+a:hover .contact {
+	margin-top: 40px;
+}
+
+.contact{
+	margin-left: 40px;
+	justify-content: center;
+}
+
+.contact h2 {
+	font-family: "Bahnschrift";
+	font-size: 25px;
+	font-weight: lighter;
+	margin-left: 55px; 
+    text-align: center;
+	color: #3d3d3d;
+	
+}
+
+.contact-container {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	display: flex;
+	margin: auto;
+	width: 70%;
+	max-width: 800px;
+	text-align: center;
+	margin-top: 9%;
+	
+}
+
+.contact-item {
+	flex: 1;
+	padding: 0 20px;
+}
+
+.divider {
+	width: 5px;
+	border-radius: 5px;
+	background-color: #efecea;
+	margin: 0 20px;
+}
+
+.icon {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.title {
+	font-family: "Bahnschrift";
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0;
+}
+
+.info {
+	text-decoration: none;
+	color: #3a75a7;
+	font-weight: 700;
+}
+
+.contact h2{
+	margin: auto;
+}
+
+.contact-item img {
+	width: 200px;
+}
+
+.map-container {
+    margin: auto;
+	margin-top: 20px;
+	width: 70%;
+	max-width: 800px;
+	
+}
+
+.map-container iframe {
+	width: 100%;
+	height: 300px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.outer {
+	background-color: #4695c1;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+.outer p {
+	font-family: "Bahnschrift";
+	font-style: normal;
+	text-align: center;
+}
+
+
+
+.menu-close {
+	display: none;
+}
+
+@media (max-width: 480px) {
+
+    .contact-container {
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	.contact-item {
+		padding: 10px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.icon {
+		width: 30px;
+		height: 30px;
+	}
+
+	.title {
+		font-size: 16px;
+	}
+
+	.info {
+		font-size: 14px;
+	}
+
+	.map-container iframe {
+		height: 200px;
+		
+	}
+
+	.outer {
+		padding: 5px 0;
+	}
+
+	.outer p {
+		font-size: 12px;
+	}
+
+	
+
+    .menu-container{
+        position: relative;
+    }
+
+    .menu-icon{
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu-icon div{
+        width: 35px;
+        height: 5px;
+        background-color: #4695c1;
+        margin: 6px;
+        transition: 0.4s;
+    }
+
+    .menu a{
+        color: white;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+	.menu {
+		height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #4695c1;
+        overflow-x: hidden;
+        padding-top: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+        transition: opacity 0.5s; visibility: 0.5s;
+	}
+
+    .menu-close{
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        margin-left: 50px;
+        font-size: 36px;
+    }
+	
+
+    nav li{
+        padding: 10px 20px;
+    }
+
+    .contact h2 {
+        font-family: "Bahnschrift";
+        font-size: 20px;
+        font-weight: lighter;
+        text-align: center;
+        color: #3d3d3d;
+        margin-top: 30px;
+        margin-left: 0%;
+        margin-right: 20px;
+	}
+
+	nav ul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	}
+
+	.nav-links a:hover {
+	text-decoration: underline;
+	text-decoration-color: #FFF;
+	text-decoration-thickness: 7px;
+	text-underline-offset: 10px;
+	}
+}
+	
