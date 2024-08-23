@@ -38,7 +38,6 @@ nav ul{
 	font-weight: bold;
 	font-size: 13px;
 	color: #4695c1;
-	
 }
 
 
@@ -93,8 +92,8 @@ nav ul{
 	width: 70%;
 	border-radius: 50px;
 	margin-left: 30%;
-	
-	
+	position: relative;
+	z-index: 10;
 }
 
 .social-links{
@@ -123,8 +122,6 @@ nav ul{
     width: 100%;
     padding-bottom: 10px;
     padding-left: 0;
-	
-	
 }
 
 
@@ -179,7 +176,8 @@ nav ul{
 		width: 50%;
 		border-radius: 50px;
 		margin: auto;
-		
+		position: relative;
+		z-index: 10;
 	}
 	
 	.social-links{
@@ -264,5 +262,4 @@ nav ul{
 
 	
 	
-
 
